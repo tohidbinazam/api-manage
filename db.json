@@ -1,0 +1,218 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Hp 3.9v Laptops",
+      "category": "Electronics",
+      "brands": "HP",
+      "price": 10002
+    },
+    {
+      "id": 2,
+      "name": "SanDisk SSD PLUS 1TB Internal SSD",
+      "category": "Electronics",
+      "brands": "SanDisk",
+      "price": 152
+    },
+    {
+      "id": 3,
+      "name": "Pierced Owl Rose Gold",
+      "category": "jewelery",
+      "brands": "Star Gold",
+      "price": 10092
+    },
+    {
+      "id": 4,
+      "name": "iphone 11pro",
+      "category": "Electronics",
+      "brands": "Apple",
+      "price": 1080
+    },
+    {
+      "id": 5,
+      "name": "Fjallraven - Foldsack No. 1 Backpack",
+      "category": "men's clothing",
+      "brands": "KK Mens",
+      "price": 10002
+    },
+    {
+      "id": 6,
+      "name": "BIYLACLESEN Women's 3-in-1",
+      "category": "women's clothing",
+      "brands": "Nike",
+      "price": 308
+    }
+  ],
+  "developers": [
+    {
+      "id": 1,
+      "name": "Tohid",
+      "email": "tohidbinazam@gmail.com",
+      "number": "01994249475",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm7.jpg",
+      "skillId": "2",
+      "roleId": "2"
+    },
+    {
+      "id": 2,
+      "name": "Tofa",
+      "email": "tofa007@gmail.com",
+      "number": "01898549463",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm9.jpg",
+      "skillId": "3",
+      "roleId": "3"
+    },
+    {
+      "id": 3,
+      "name": "Tarin",
+      "email": "tarin2021@gmail.com",
+      "number": "01794242583",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm8.jpg",
+      "skillId": "4",
+      "roleId": "2"
+    },
+    {
+      "id": 4,
+      "name": "Tosiba",
+      "email": "tosibaislam@gmail.com",
+      "number": "01364249463",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm6.jpg",
+      "skillId": "4",
+      "roleId": "1"
+    },
+    {
+      "id": 5,
+      "name": "Harun",
+      "email": "harunrahaman@gmail.com",
+      "number": "01492569496",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm5.jpg",
+      "skillId": "2",
+      "roleId": "3"
+    },
+    {
+      "id": 6,
+      "name": "Zafor",
+      "email": "zaforhero@gmail.com",
+      "number": "01694658241",
+      "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm3.jpg",
+      "skillId": "1",
+      "roleId": "2"
+    },
+    {
+      "id": 7,
+      "name": "Tohid Bin Azam",
+      "email": "contact@todayhours.com",
+      "number": "01646018542",
+      "photo": "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+      "skillId": "3",
+      "roleId": "3"
+    },
+    {
+      "id": 8,
+      "name": "Tohid Bin",
+      "email": "contact@todayhours.com",
+      "number": "01646018542",
+      "photo": "https://images.unsplash.com/photo-1544465544-1b71aee9dfa3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBob3RvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "skillId": "2",
+      "roleId": "1"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "MERN Developer"
+    },
+    {
+      "id": 2,
+      "name": "IOS Developer"
+    },
+    {
+      "id": 3,
+      "name": "Java Developer"
+    },
+    {
+      "id": 4,
+      "name": "Django Developer"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Super Admin"
+    },
+    {
+      "id": 2,
+      "name": "Admin"
+    },
+    {
+      "id": 3,
+      "name": "Office stafe"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Sharif Islam",
+      "roll": 30,
+      "class": 8,
+      "cgpa": 3.85,
+      "gread": "A-"
+    },
+    {
+      "id": 2,
+      "name": "Ariful Haq",
+      "roll": 8,
+      "class": 12,
+      "cgpa": 4,
+      "gread": "A"
+    },
+    {
+      "id": 3,
+      "name": "Khan ALi",
+      "roll": 600,
+      "class": 3,
+      "cgpa": 4.98,
+      "gread": "A"
+    },
+    {
+      "id": 4,
+      "name": "Motin Haq",
+      "roll": 25,
+      "class": 7,
+      "cgpa": 3.09,
+      "gread": "B"
+    },
+    {
+      "id": 5,
+      "name": "Khan ALi",
+      "roll": 600,
+      "class": 10,
+      "cgpa": 5,
+      "gread": "A+"
+    },
+    {
+      "id": 6,
+      "name": "Tohid Bin Azam",
+      "roll": 20,
+      "class": 8,
+      "cgpa": 3.85,
+      "gread": "A-"
+    },
+    {
+      "id": 7,
+      "name": "Tsrif",
+      "roll": 3020,
+      "class": 12,
+      "cgpa": 4,
+      "gread": "A"
+    },
+    {
+      "id": 8,
+      "name": "Khan Ali",
+      "roll": 3200,
+      "class": 12,
+      "cgpa": 5,
+      "gread": "A+"
+    }
+  ]
+}

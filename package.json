@@ -1,0 +1,14 @@
+{
+  "name": "class_19",
+  "version": "1.0.0",
+  "description": "This is a REST APIi management project",
+  "main": "app.js",
+  "scripts": {
+    "js": "json-server --watch db.json --port 5050"
+  },
+  "author": "tohidbinazam",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
