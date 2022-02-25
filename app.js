@@ -25,7 +25,8 @@ getapidata('roles', role);
 
 // Get All Developers
 const getDevelopers = () => {
-
+    
+    devsList.innerHTML = '';
     axios.get(`http://localhost:5050/developers`).then(res => {
         res.data.map((data, index) => {
             devsList.innerHTML += `
