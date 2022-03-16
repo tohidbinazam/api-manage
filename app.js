@@ -10,9 +10,12 @@ const photo = document.getElementById('photo');
 
 const getapidata = (api, element) => {
   axios.get(`http://localhost:5050/${api}`).then((res) => {
+    let skill_list = '';
     res.data.map((data) => {
-      element.innerHTML += `<option value="${data.id}"> ${data.name} </option>`;
+      // element.innerHTML += `<option value="${data.id}"> ${data.name} </option>`;
+      skill_list += `<option value="${data.id}"> ${data.name} </option>`;
     });
+    element.insertAdjacentHTML('beforeend', skill_list);
   });
 };
 
@@ -30,19 +33,11 @@ const getDevelopers = () => {
                     <td>${data.name}</td>
                     <td>${data.email}</td>
                     <td>${data.number}</td>
-                    <td><img style="width: 40px; height: 40px;" src="${
-                      data.photo
-                    }" alt=""></td>
+                    <td><img style="width: 40px; height: 40px;" src="${data.photo}" alt=""></td>
                     <td>
-                    <a onclick="dataView(${
-                      data.id
-                    })" class="btn btn-info btn-sm" data-bs-toggle="modal" href="#viewModal"><i class="fa-solid fa-eye"></i> View</a>
-                    <a onclick="dataEdit(${
-                      data.id
-                    })" class="btn btn-warning btn-sm" data-bs-toggle="modal" href="#editModal"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                    <a onclick="dataDelete(${
-                      data.id
-                    })" class="btn btn-danger btn-sm" data-bs-toggle="modal" href="#deleteModal"><i class="fa-regular fa-trash-can"></i> Delete</a>
+                    <a onclick="dataView(${data.id})" class="btn btn-info btn-sm" data-bs-toggle="modal" href="#viewModal"><i class="fa-solid fa-eye"></i> View</a>
+                    <a onclick="dataEdit(${data.id})" class="btn btn-warning btn-sm" data-bs-toggle="modal" href="#editModal"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                    <a onclick="dataDelete(${data.id})" class="btn btn-danger btn-sm" data-bs-toggle="modal" href="#deleteModal"><i class="fa-regular fa-trash-can"></i> Delete</a>
                     </td>
                 </tr>
             `;
@@ -56,14 +51,7 @@ getDevelopers();
 addNewDevs.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  if (
-    devName.value &&
-    email.value &&
-    phone.value &&
-    photo.value &&
-    skill.value &&
-    role.value
-  ) {
+  if (devName.value && email.value && phone.value && photo.value && skill.value && role.value) {
     axios
       .post(`http://localhost:5050/developers`, {
         id: '',
@@ -164,13 +152,9 @@ const singleData = document.querySelector('.singleData');
 const dataView = (id) => {
   singleData.innerHTML = '';
   axios.get(`http://localhost:5050/developers/${id}`).then((res) => {
-    axios
-      .get(`http://localhost:5050/skills/${res.data.skillId}`)
-      .then((skill) => {
-        axios
-          .get(`http://localhost:5050/roles/${res.data.roleId}`)
-          .then((role) => {
-            singleData.innerHTML = `
+    axios.get(`http://localhost:5050/skills/${res.data.skillId}`).then((skill) => {
+      axios.get(`http://localhost:5050/roles/${res.data.roleId}`).then((role) => {
+        singleData.innerHTML = `
                     <div class="row">
                         <div class="col-xl-6">
                             <img class="border border-5 shadow-lg border-white w-100" src="${res.data.photo}" alt="">
@@ -184,7 +168,7 @@ const dataView = (id) => {
                         </div>
                     </div>
                 `;
-          });
       });
+    });
   });
 };

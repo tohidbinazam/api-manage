@@ -45,7 +45,7 @@
   ],
   "developers": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Tohid",
       "email": "tohidbinazam@gmail.com",
       "number": "01994249475",
@@ -56,11 +56,11 @@
     {
       "id": 2,
       "name": "Tofa",
-      "email": "tofa007@gmail.com",
-      "number": "01898549463",
+      "email": "tohidbinazam@gmail.com",
+      "number": "01994249475",
       "photo": "http://www.team.gsamdani.com/wp-content/uploads/2016/05/tm9.jpg",
-      "skillId": "3",
-      "roleId": "3"
+      "skillId": "2",
+      "roleId": "2"
     },
     {
       "id": 3,
