@@ -5,7 +5,7 @@
       "name": "Hp 3.9v Laptops",
       "category": "Electronics",
       "brands": "HP",
-      "price": 10002
+      "price": 102
     },
     {
       "id": 2,
@@ -19,21 +19,21 @@
       "name": "Pierced Owl Rose Gold",
       "category": "jewelery",
       "brands": "Star Gold",
-      "price": 10092
+      "price": 132
     },
     {
       "id": 4,
       "name": "iphone 11pro",
       "category": "Electronics",
       "brands": "Apple",
-      "price": 1080
+      "price": 180
     },
     {
       "id": 5,
       "name": "Fjallraven - Foldsack No. 1 Backpack",
       "category": "men's clothing",
       "brands": "KK Mens",
-      "price": 10002
+      "price": 102
     },
     {
       "id": 6,
